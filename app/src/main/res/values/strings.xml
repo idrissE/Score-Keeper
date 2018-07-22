@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="reset">Reset</string>
+    <string name="six_points">+6 Points</string>
+    <string name="three_points">+3 Points</string>
+    <string name="two_points">+2 Points</string>
+    <string name="one_point">+1 Point</string>
+</resources>

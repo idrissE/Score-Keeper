@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_spacing">
+
+        <LinearLayout style="@style/ColumnStyle">
+
+            <TextView
+                style="@style/TeamTextStyle"
+                android:text="@string/home" />
+
+            <TextView
+                android:id="@+id/home_score"
+                style="@style/ScoreTextStyle" />
+
+            <Button
+                android:id="@+id/add_six_home"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/six_points" />
+
+            <Button
+                android:id="@+id/add_three_home"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/three_points" />
+
+            <Button
+                android:id="@+id/add_two_home"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/two_points" />
+
+            <Button
+                android:id="@+id/add_one_home"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/one_point" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ColumnStyle">
+
+            <TextView
+                style="@style/TeamTextStyle"
+                android:text="@string/away" />
+
+            <TextView
+                android:id="@+id/away_score"
+                style="@style/ScoreTextStyle" />
+
+
+            <Button
+                android:id="@+id/add_six_away"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/six_points" />
+
+            <Button
+                android:id="@+id/add_three_away"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/three_points" />
+
+            <Button
+                android:id="@+id/add_two_away"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/two_points" />
+
+            <Button
+                android:id="@+id/add_one_away"
+                style="@style/ButtonStyle"
+                android:onClick="updateTeamScore"
+                android:text="@string/one_point" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScores"
+        android:text="@string/reset" />
+
+</RelativeLayout>
